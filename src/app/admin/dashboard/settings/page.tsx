@@ -80,8 +80,8 @@ export default function AdminSettings() {
   const handleHeroFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
-    if (file.size > 10 * 1024 * 1024) {
-      alert("Hero image is too large. Please select an image smaller than 10MB.");
+    if (file.size > 50 * 1024 * 1024) {
+      alert("Hero image is too large. Please select an image smaller than 50MB.");
       if (heroInputRef.current) heroInputRef.current.value = "";
       return;
     }
