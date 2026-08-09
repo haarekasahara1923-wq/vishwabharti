@@ -1,0 +1,161 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 5%;
+  background: rgba(240, 249, 255, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 1px 0 rgba(2,132,199,0.10), 0 4px 20px rgba(2,132,199,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(2,132,199,0.15);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.logoRing {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(135deg, #0284c7, #38bdf8);
+  box-shadow: 0 4px 14px rgba(2,132,199,0.30);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.schoolName {
+  font-family: var(--font-heading);
+  color: var(--secondary);
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+}
+
+.schoolNameSub {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--text-light);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: 1px;
+}
+
+.nav {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.navLink {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--text-mid);
+  padding: 8px 16px;
+  border-radius: 50px;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.navLink:hover {
+  color: var(--primary);
+  background: rgba(2,132,199,0.08);
+}
+
+.active {
+  color: var(--primary);
+  background: rgba(2,132,199,0.10);
+  font-weight: 600;
+}
+
+.callButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #0284c7, #b91c1c);
+  color: var(--white);
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(2,132,199,0.35);
+  letter-spacing: 0.2px;
+}
+
+.callButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(2,132,199,0.50);
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--secondary);
+  cursor: pointer;
+  padding: 4px;
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(240, 249, 255, 0.98);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(2,132,199,0.15);
+    padding: 20px 0;
+    box-shadow: 0 10px 20px rgba(2,132,199,0.08);
+  }
+
+  .nav.navOpen {
+    display: flex;
+  }
+
+  .schoolName {
+    font-size: 1.05rem;
+  }
+
+  .callButton {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+
+  .callText {
+    display: none; /* Hide 'Call Now' text on very small screens, show only icon */
+  }
+}
+
+@media (min-width: 400px) and (max-width: 900px) {
+  .callText {
+    display: inline;
+  }
+}

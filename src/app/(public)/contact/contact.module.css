@@ -1,0 +1,197 @@
+/* ===== CONTACT PAGE ===== */
+.container {
+  min-height: 100vh;
+}
+
+.hero {
+  text-align: center;
+  padding: 90px 6% 60px;
+  background: linear-gradient(
+    160deg,
+    rgba(28, 20, 12, 0.85) 0%,
+    rgba(111, 78, 55, 0.72) 100%
+  ), url('/images/hero_school.jpg') center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 100%, rgba(230,126,34,0.18), transparent 70%);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.heroSub {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.85);
+  position: relative;
+  z-index: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 6%;
+}
+
+/* ===== INFO CARD ===== */
+.infoCard {
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  padding: 50px 42px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.infoCard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+
+.infoCard h3 {
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.infoCard > p {
+  color: var(--text-mid);
+  line-height: 1.8;
+  margin-bottom: 36px;
+  font-size: 0.97rem;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.detailItem {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 18px 20px;
+  background: rgba(230,126,34,0.04);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(230,126,34,0.12);
+  transition: var(--transition);
+}
+
+.detailItem:hover {
+  background: rgba(230,126,34,0.08);
+  border-color: rgba(230,126,34,0.25);
+}
+
+.icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, rgba(230,126,34,0.15), rgba(243,156,18,0.1));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailItem strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+
+.detailItem p {
+  margin: 0;
+  color: var(--text-dark);
+  font-size: 0.97rem;
+  line-height: 1.6;
+}
+
+.detailItem a {
+  color: var(--text-dark);
+  transition: var(--transition);
+}
+
+.detailItem a:hover {
+  color: var(--primary);
+}
+
+.whatsappBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: 0 4px 16px rgba(37,211,102,0.3);
+}
+
+.whatsappBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37,211,102,0.45);
+}
+
+/* ===== MAP CARD ===== */
+.mapCard {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border);
+  min-height: 480px;
+  position: sticky;
+  top: 90px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 50px 5%;
+  }
+
+  .mapCard {
+    min-height: 350px;
+    position: static;
+  }
+
+  .infoCard {
+    padding: 36px 28px;
+  }
+}

@@ -1,0 +1,225 @@
+/* ===== PAGE HEADER HERO ===== */
+.container {
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 90px 6% 60px;
+  background: linear-gradient(
+    160deg,
+    rgba(28, 20, 12, 0.82) 0%,
+    rgba(111, 78, 55, 0.72) 100%
+  ), url('/images/hero_school.jpg') center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 100%, rgba(230,126,34,0.2), transparent 70%);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.88);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.85;
+  position: relative;
+  z-index: 1;
+  text-align: justify;
+}
+
+/* ===== CONTENT SECTION (Director / Principal) ===== */
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 6%;
+}
+
+.messageCard {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  padding: 60px 0;
+  border-bottom: 1px solid rgba(230,126,34,0.12);
+  position: relative;
+}
+
+.messageCard:last-child {
+  border-bottom: none;
+}
+
+/* ===== PHOTO ===== */
+.imagePlaceholder {
+  width: 260px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: linear-gradient(135deg, #f0e8df, #e8ddd4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-size: 0.9rem;
+  box-shadow: 0 12px 40px rgba(111,78,55,0.2);
+  position: relative;
+}
+
+.imagePlaceholder::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-md);
+  box-shadow: inset 0 0 0 3px rgba(230,126,34,0.2);
+}
+
+/* ===== TEXT CONTENT ===== */
+.textContent {
+  flex: 1;
+}
+
+.roleTitle {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--primary);
+  background: rgba(230,126,34,0.1);
+  border: 1px solid rgba(230,126,34,0.25);
+  padding: 5px 16px;
+  border-radius: 50px;
+  margin-bottom: 14px;
+}
+
+.name {
+  font-family: var(--font-heading);
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.message {
+  font-size: 1rem;
+  line-height: 1.95;
+  color: var(--text-mid);
+  font-style: italic;
+  position: relative;
+  padding-left: 20px;
+  border-left: 3px solid rgba(230,126,34,0.4);
+  margin-top: 16px;
+  text-align: justify;
+}
+
+.reverseCard {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.reverseCard .message {
+  border-left: none;
+  border-right: 3px solid rgba(230,126,34,0.4);
+  padding-left: 0;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+/* ===== VISION MISSION ===== */
+.missionVision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  padding: 80px 6%;
+  background: linear-gradient(180deg, #FFF5EC 0%, #FFFDF9 100%);
+  max-width: 100%;
+}
+
+.mvCard {
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  padding: 50px 40px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.mvCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.mvCard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  border-radius: 4px 4px 0 0;
+}
+
+.mvCard h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 18px;
+}
+
+.mvCard p {
+  line-height: 1.85;
+  color: var(--text-mid);
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .messageCard {
+    flex-direction: column !important;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .imagePlaceholder {
+    width: 200px;
+    height: 240px;
+    margin: 0 auto;
+  }
+
+  .message {
+    padding-left: 16px;
+    text-align: left;
+  }
+
+  .missionVision {
+    grid-template-columns: 1fr;
+    padding: 50px 5%;
+  }
+
+  .contentSection {
+    padding: 50px 5%;
+  }
+}

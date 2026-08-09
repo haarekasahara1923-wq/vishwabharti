@@ -1,0 +1,39 @@
+.floatingBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25D366; /* WhatsApp Green */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: bounce-slight 2s infinite ease-in-out;
+}
+
+.floatingBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.6);
+  animation: none;
+}
+
+.waIcon {
+  width: 32px;
+  height: 32px;
+}
+
+@keyframes bounce-slight {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
