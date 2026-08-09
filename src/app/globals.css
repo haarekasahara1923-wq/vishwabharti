@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap');
 
 :root {
-  --primary:       #0284c7;
-  --primary-color: #0284c7;
-  --primary-hover: #0ea5e9;
-  --primary-dark:  #0369a1;
-  --secondary:     #b91c1c;
-  --secondary-color: #991b1b;
+  --primary:       #0ea5e9;
+  --primary-color: #0ea5e9;
+  --primary-hover: #38bdf8;
+  --primary-dark:  #0284c7;
+  --secondary:     #ef4444;
+  --secondary-color: #dc2626;
   --accent:        #38bdf8;
-  --gold:          #fecaca;
-  --bg:            #f0f9ff;
-  --bg-dark:       #0c4a6e;
-  --surface:       #FFFFFF;
+  --gold:          #fca5a5;
+  --bg:            #ffffff;
+  --bg-dark:       #0ea5e9;
+  --surface:       #f8fafc;
   --text-dark:     #0c1a2e;
   --text-mid:      #1e3a5f;
   --text-light:    #4a7fa8;
@@ -57,7 +57,7 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
-  color: var(--secondary);
+  color: var(--text-dark);
   line-height: 1.25;
 }
 

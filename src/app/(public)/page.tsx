@@ -59,10 +59,10 @@ export default function Home() {
         className={styles.hero}
         style={heroImageUrl ? {
           background: `linear-gradient(
-            160deg,
-            rgba(12, 74, 110, 0.85) 0%,
-            rgba(2, 132, 199, 0.65) 50%,
-            rgba(185, 28, 28, 0.60) 100%
+            135deg,
+            rgba(2, 132, 199, 0.5) 0%,
+            rgba(14, 165, 233, 0.3) 50%,
+            rgba(239, 68, 68, 0.4) 100%
           ), url('${heroImageUrl}') center/cover no-repeat`
         } : undefined}
       >
