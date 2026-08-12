@@ -91,7 +91,7 @@
 /* ===== TEXT CONTENT ===== */
 .textContent {
   flex: 1;
-  text-align: center;
+  text-align: left;
 }
 
 .roleTitle {
@@ -124,23 +124,29 @@
   color: var(--text-mid);
   font-style: italic;
   position: relative;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 0;
   border-left: 3px solid rgba(2,132,199,0.4);
+  border-right: none;
   margin-top: 16px;
-  text-align: center;
+  text-align: left;
 }
 
 .reverseCard {
   flex-direction: row-reverse;
-  text-align: center;
+  text-align: right;
+}
+
+.reverseCard .textContent {
+  text-align: right;
 }
 
 .reverseCard .message {
-  border-left: 3px solid rgba(2,132,199,0.4);
-  border-right: none;
-  padding-left: 20px;
-  padding-right: 0;
-  text-align: center;
+  border-left: none;
+  border-right: 3px solid rgba(2,132,199,0.4);
+  padding-left: 0;
+  padding-right: 20px;
+  text-align: right;
 }
 
 /* ===== VISION MISSION ===== */
@@ -183,14 +189,14 @@
   font-weight: 800;
   color: var(--text-dark);
   margin-bottom: 18px;
-  text-align: center;
+  text-align: left;
 }
 
 .mvCard p {
   line-height: 1.85;
   color: var(--text-mid);
   font-size: 1rem;
-  text-align: center;
+  text-align: left;
 }
 
 /* ===== RESPONSIVE ===== */

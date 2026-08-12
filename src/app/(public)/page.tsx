@@ -36,9 +36,9 @@ function useCountUp(target: number, duration = 2000) {
 export default function Home() {
   const [isLeadFormOpen, setIsLeadFormOpen] = useState(false);
   const [heroImageUrl, setHeroImageUrl] = useState("");
-  const years   = useCountUp(60);
-  const students = useCountUp(2000);
-  const teachers = useCountUp(80);
+  const years   = useCountUp(27);
+  const students = useCountUp(500);
+  const teachers = useCountUp(30);
 
   useEffect(() => {
     fetch("/api/settings")
@@ -58,12 +58,7 @@ export default function Home() {
       <section
         className={styles.hero}
         style={heroImageUrl ? {
-          background: `linear-gradient(
-            135deg,
-            rgba(2, 132, 199, 0.5) 0%,
-            rgba(14, 165, 233, 0.3) 50%,
-            rgba(239, 68, 68, 0.4) 100%
-          ), url('${heroImageUrl}') center/cover no-repeat`
+          background: `rgba(2, 132, 199, 0.75) url('${heroImageUrl}') center/cover no-repeat`
         } : undefined}
       >
         <div className={styles.heroOverlay} />
@@ -143,7 +138,7 @@ export default function Home() {
           <div className={styles.aboutImageBadge}>
             <span className={styles.badgeIcon}>🎓</span>
             <div>
-              <div className={styles.badgeNum}>60+</div>
+              <div className={styles.badgeNum}>27+</div>
               <div className={styles.badgeText}>Years of Trust</div>
             </div>
           </div>
