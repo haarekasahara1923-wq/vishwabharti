@@ -53,9 +53,9 @@
 .messageCard {
   display: flex;
   gap: 60px;
-  align-items: center;
+  align-items: flex-start;
   padding: 60px 0;
-  border-bottom: 1px solid rgba(230,126,34,0.12);
+  border-bottom: 1px solid rgba(2,132,199,0.12);
   position: relative;
 }
 
@@ -132,22 +132,12 @@
   text-align: left;
 }
 
+/* reverseCard only flips image to right side; text stays left-aligned */
 .reverseCard {
   flex-direction: row-reverse;
-  text-align: right;
 }
 
-.reverseCard .textContent {
-  text-align: right;
-}
-
-.reverseCard .message {
-  border-left: none;
-  border-right: 3px solid rgba(2,132,199,0.4);
-  padding-left: 0;
-  padding-right: 20px;
-  text-align: right;
-}
+/* No override needed — .textContent and .message stay left-aligned */
 
 /* ===== VISION MISSION ===== */
 .missionVision {

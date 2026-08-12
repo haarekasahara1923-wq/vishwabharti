@@ -37,7 +37,7 @@ export default function Home() {
   const [isLeadFormOpen, setIsLeadFormOpen] = useState(false);
   const [heroImageUrl, setHeroImageUrl] = useState("");
   const years   = useCountUp(27);
-  const students = useCountUp(500);
+  const students = useCountUp(2000);
   const teachers = useCountUp(30);
 
   useEffect(() => {
