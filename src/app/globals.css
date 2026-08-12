@@ -45,7 +45,7 @@ html, body {
   overflow-x: hidden;
   background-color: var(--bg);
   color: var(--text-dark);
-  font-family: var(--font-body);
+  font-family: var(--font-heading);
   line-height: 1.7;
 }
 
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  background: #0284c7;
   color: var(--white);
   padding: 14px 32px;
   border: none;
@@ -201,7 +201,7 @@ input:focus, textarea:focus, select:focus {
 /* ===================== SECTION UTILITY ===================== */
 .section-label {
   display: inline-block;
-  background: linear-gradient(135deg, rgba(2,132,199,0.10), rgba(56,189,248,0.10));
+  background: rgba(2,132,199,0.10);
   color: var(--primary);
   font-family: var(--font-heading);
   font-size: 0.78rem;
@@ -241,10 +241,7 @@ input:focus, textarea:focus, select:focus {
 
 /* ===================== GRADIENT TEXT ===================== */
 .gradient-text {
-  background: linear-gradient(135deg, #0284c7, #b91c1c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #0284c7;
 }
 
 

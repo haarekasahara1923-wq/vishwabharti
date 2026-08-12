@@ -33,10 +33,10 @@
 }
 
 .filterBtn.active {
-  background: linear-gradient(135deg, var(--primary), #C0392B);
+  background: #0284c7;
   color: white;
   border-color: transparent;
-  box-shadow: 0 4px 16px rgba(230,126,34,0.35);
+  box-shadow: 0 4px 16px rgba(2,132,199,0.35);
 }
 
 /* ===== GRID ===== */

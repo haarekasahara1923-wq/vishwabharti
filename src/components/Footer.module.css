@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(160deg, #0c4a6e 0%, #0369a1 50%, #0284c7 100%);
+  background: #0c4a6e;
   color: rgba(255,255,255,0.88);
   padding: 80px 6% 0;
   margin-top: auto;
@@ -12,9 +12,7 @@
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #38bdf8, #ffffff, #b91c1c, #38bdf8);
-  background-size: 300% 100%;
-  animation: shimmer 4s linear infinite;
+  background: #38bdf8;
 }
 
 .footer::after {
@@ -64,7 +62,7 @@
   left: 0;
   width: 28px;
   height: 2px;
-  background: linear-gradient(90deg, var(--primary), var(--accent));
+  background: #0284c7;
   border-radius: 2px;
 }
 

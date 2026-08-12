@@ -7,12 +7,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: var(--hero-bg, linear-gradient(
-    135deg,
-    rgba(2, 132, 199, 0.5) 0%,
-    rgba(14, 165, 233, 0.3) 50%,
-    rgba(239, 68, 68, 0.4) 100%
-  )), url('/images/hero_school.jpg') center/cover no-repeat;
+  background: #0284c7 url('/images/hero_school.jpg') center/cover no-repeat;
   color: var(--white);
   overflow: hidden;
 }
@@ -20,7 +15,7 @@
 .heroOverlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 50% 80%, rgba(56,189,248,0.18) 0%, transparent 70%);
+  background: rgba(56,189,248,0.10);
   pointer-events: none;
 }
 
@@ -68,7 +63,7 @@
   width: 80px;
   height: 4px;
   border-radius: 2px;
-  background: linear-gradient(90deg, #0284c7, #ffffff, #b91c1c);
+  background: #0284c7;
   animation: shimmer 2.5s linear infinite;
   background-size: 300% 100%;
 }
@@ -141,7 +136,7 @@
 
 /* ===== STATS BAR ===== */
 .statsBar {
-  background: linear-gradient(135deg, #0284c7, #0369a1);
+  background: #0284c7;
   color: var(--white);
   padding: 48px 6%;
   display: flex;
@@ -158,9 +153,7 @@
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #38bdf8, #ffffff, #b91c1c, #38bdf8);
-  background-size: 300% 100%;
-  animation: shimmer 3s linear infinite;
+  background: #38bdf8;
 }
 
 .statItem {
@@ -180,10 +173,10 @@
   font-family: var(--font-heading);
   font-size: 2.8rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #bae6fd, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background: #ffffff;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #ffffff;
+  background-clip: unset;
   line-height: 1;
   margin-bottom: 8px;
 }
@@ -249,7 +242,7 @@
   position: absolute;
   bottom: -20px;
   left: -20px;
-  background: linear-gradient(135deg, #0284c7, #0369a1);
+  background: #0284c7;
   color: white;
   border-radius: var(--radius-md);
   padding: 16px 24px;
@@ -277,7 +270,7 @@
 
 /* ===== FEATURES ===== */
 .featuresSection {
-  background: linear-gradient(180deg, #e0f2fe 0%, var(--bg) 100%);
+  background: #e0f2fe;
   padding: 100px 6%;
 }
 
@@ -310,7 +303,7 @@
   top: 0; left: 0;
   width: 4px;
   height: 100%;
-  background: linear-gradient(180deg, #0284c7, #b91c1c);
+  background: #0284c7;
   opacity: 0;
   transition: var(--transition);
   z-index: 10;
@@ -357,12 +350,7 @@
 
 /* ===== CTA BANNER ===== */
 .ctaBanner {
-  background: linear-gradient(
-    135deg,
-    rgba(2, 132, 199, 0.85) 0%,
-    rgba(14, 165, 233, 0.75) 50%,
-    rgba(239, 68, 68, 0.8) 100%
-  ), url('/images/hero_school.jpg') center/cover no-repeat fixed;
+  background: rgba(2, 132, 199, 0.92) url('/images/hero_school.jpg') center/cover no-repeat fixed;
   padding: 100px 6%;
   text-align: center;
   color: var(--white);
@@ -374,7 +362,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 50% 50%, rgba(56,189,248,0.22), transparent 70%);
+  background: rgba(56,189,248,0.10);
   pointer-events: none;
 }
 
@@ -401,7 +389,7 @@
 }
 
 .ctaBannerBtn {
-  background: linear-gradient(135deg, #0284c7, #b91c1c);
+  background: #0284c7;
   color: white;
   border: none;
   padding: 16px 40px;
