@@ -120,7 +120,7 @@ export default function Home() {
             A Legacy of <span className="gradient-text">Excellence</span> in Education
           </h2>
           <p className={styles.aboutPara}>
-            At Vishwa Bharti Higher Secondary School, we believe every child is a unique gift. With a holistic approach — blending academic rigor, cultural values, and modern innovation, we have nurtured students to reach their full potential since 1964.
+            At Vishwa Bharti Higher Secondary School, we believe every child is a unique gift. With a holistic approach — blending academic rigor, cultural values, and modern innovation, we have nurtured students to reach their full potential since 1999.
           </p>
           <p className={styles.aboutPara}>
             Our dedicated faculty, state-of-the-art facilities, and vibrant co-curricular programs ensure that every student steps out as a confident, compassionate global citizen — ready to lead tomorrow.
